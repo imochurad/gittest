@@ -42,10 +42,17 @@ git push origin --delete feature_01
 10. To commit a change straigh to the local repository, without exlpicitly adding it to the index (it will avoid the process of staging a file):
 git commit -a -m “Message”
 
+11. To remove a file (force remove) that has been already staged in the local index (it will actually delete a file from the folder and from the index):
+git rm -f deleteMe.txt
 
-If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
-git remote add origin <server>
-Now you are able to push your changes to the selected remote server
+12. To remove a file from local index (it will stay physically on the disk):
+git rm —cached deleteMe.txt
+
+13. To figure out diffs between local repository and a working directory run:
+git diff
+
+14. To figure out diffs betweel local repository and local index (files that have been staged) run:
+git diff —cached
 
 
 
