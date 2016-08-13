@@ -28,7 +28,7 @@ Note! When merging with conflicts, git will show a following message:
 CONFLICT (content): Merge conflict in GIT cheat sheet.txt
 When file is opened in the text editor it will show changes made in the 2 branches.
 >>>>>HEAD is current branch into which changes are about to be merged!
-change in feature_01!
+change in master!
 
 8. To switch branches use (for example feature_01):
 git checkout feature01
