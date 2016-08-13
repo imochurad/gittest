@@ -4,6 +4,8 @@ git clone https://github.com/imochurad/test (with auth: git clone username@host:
 2. To add file to the local index:
 git add 'GIT cheat sheet.txt' (git add *)
 
+NOTE! You have to add changes to the local index every time the change was made. If file was modified after the file was added to the local index, when commiting to local repository, only changes that were made at the moment of addition to the local index will be propagated.
+
 3. To commit changes to the local HEAD:
 git commit -m "Commit message"
 
@@ -11,3 +13,17 @@ git commit -m "Commit message"
 git push origin master
 Username for 'https://github.com': imochurad
 Password for 'https://imochurad@github.com':
+
+
+
+…
+
+
+
+
+If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
+git remote add origin <server>
+Now you are able to push your changes to the selected remote server
+
+
+
