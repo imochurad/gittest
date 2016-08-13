@@ -23,6 +23,8 @@ git push origin feature_01
 7. To merge current branch(for example master) with another branch(feature_01):
 git merge feature01
 
+change in feature01!
+
 8. To switch branches use (for example feature_01):
 git checkout feature01
 
