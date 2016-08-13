@@ -14,12 +14,11 @@ git push origin master
 Username for 'https://github.com': imochurad
 Password for 'https://imochurad@github.com':
 
+5. To create new branch in local repository based on the master:
+git checkout -b feature_01
 
-
-…
-
-
-
+6. To push newly created branch to remote repository:
+git push origin feature_01
 
 If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
 git remote add origin <server>
