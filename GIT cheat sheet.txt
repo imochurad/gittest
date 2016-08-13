@@ -23,7 +23,7 @@ git push origin feature_01
 7. To merge current branch(for example master) with another branch(feature_01):
 git merge feature01
 
-8. To switch branches use:
+8. To switch branches use (ooops, potential conflict!!!):
 git checkout <branch>
 
 If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
