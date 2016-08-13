@@ -1,2 +1,13 @@
 1. To clone remote repository:
 git clone https://github.com/imochurad/test (with auth: git clone username@host:/path/to/repository)
+
+2. To add file to the local index:
+git add 'GIT cheat sheet.txt' (git add *)
+
+3. To commit changes to the local HEAD:
+git commit -m "Commit message"
+
+4. To send changes to the remote repository (branch master): 
+git push origin master
+Username for 'https://github.com': imochurad
+Password for 'https://imochurad@github.com':
