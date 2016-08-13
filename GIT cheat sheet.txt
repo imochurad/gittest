@@ -37,7 +37,10 @@ git push origin <branch_name>
 git checkout feature01
 
 9. To delete a branch use:
-git branch -d feature_01
+git push origin --delete feature_01
+
+10. To commit a change straigh to the local repository, without exlpicitly adding it to the index (it will avoid the process of staging a file):
+git commit -a -m “Message”
 
 
 If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
