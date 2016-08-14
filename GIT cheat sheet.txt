@@ -65,9 +65,24 @@ git mv fileName newFileName
 
 git checkout --<filename>
 
-Changes already added to the index, as well as new files, will be kept.
+git checkout .
 
-18. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
+^ this will revert all changes made to the working copy
+
+Note that changes already added to the index, as well as new files, will be kept.
+
+18. To revert changes made to the index:
+
+git reset
+
+Warning: this will reset all of your unpushed commits to master!
+
+19. To revert a change that has been committed, do this:
+
+git revert ...
+
+
+20. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
 
 git fetch origin
 git reset --hard origin/master
