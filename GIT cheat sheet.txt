@@ -58,5 +58,8 @@ git diff —cached
 15. To show all files modified(created, changed, removed) in the local working directory:
 git status
 
+16. To rename a file that was already staged:
+git mv fileName newFileName
+
 
 
