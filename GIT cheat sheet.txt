@@ -50,9 +50,13 @@ git rm —cached deleteMe.txt
 
 13. To figure out diffs between local repository and a working directory run:
 git diff
+But this will not show new files that have been added and are still untracked.
 
 14. To figure out diffs betweel local repository and local index (files that have been staged) run:
 git diff —cached
+
+15. To show all files modified(created, changed, removed) in the local working directory:
+git status
 
 
 
