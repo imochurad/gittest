@@ -61,5 +61,16 @@ git status
 16. To rename a file that was already staged:
 git mv fileName newFileName
 
+17. Replace local changes (in case you did something wrong, changes in the working directory can be replaced with the last content in HEAD)
+
+git checkout --<filename>
+
+Changes already added to the index, as well as new files, will be kept.
+
+18. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
+
+git fetch origin
+git reset --hard origin/master
+
 
 
