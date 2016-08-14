@@ -79,13 +79,18 @@ Warning: this will reset all of your unpushed commits to master!
 
 19. To revert a change that has been committed, do this:
 
-git revert ...
+git log  <—— pick a commit id from the list
+git revert 8f1314cae35ab390f87a2b80711ac77d31cce52c
+git push origin <branch>
 
 
 20. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
 
 git fetch origin
 git reset --hard origin/master
+
+1. a
+
 
 
 
