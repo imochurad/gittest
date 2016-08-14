@@ -85,11 +85,15 @@ git git push origin <branch>
 
 Note! in order to revert several commits procedure must be repeated depending on the postion of the commit in the list
 
+20. To preview diffs between 2 branches (might be useful before merge):
+git diff <source_branch> <target_branch>
 
-20. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
+21. To drop all local changes and commits, fetch the latest history from the server and point local master branch at it:
 
 git fetch origin
 git reset --hard origin/master
+
+
 
 
 
