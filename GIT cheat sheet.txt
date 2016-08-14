@@ -26,12 +26,23 @@ git merge feature01
 
 Note! When merging with conflicts, git will show a following message:
 CONFLICT (content): Merge conflict in GIT cheat sheet.txt
+
 When file is opened in the text editor it will show changes made in the 2 branches.
 <<<<<<< HEAD is current branch into which changes are about to be merged!
 After conflict was resolved change must be added to the local index, then committed to local repository only after that pushed along with other non-conflicting changes:
+
 git add <conflicting_file_name>
 git commit -m “Merge message”
 git push origin <branch_name>
+
+After merge conflict was detected to avoid resolving them in the text editor one by one, mergetool can be used. To launch it type:
+
+git mergetool
+
+After all the conflicts were resolved and the file has been saved, do not forget to remove file_name.orig files that contain conflict information.
+
+For example:
+rm README.md.orig
 
 8. To switch branches use (for example feature_01):
 git checkout feature01
