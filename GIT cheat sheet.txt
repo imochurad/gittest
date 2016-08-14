@@ -37,7 +37,24 @@ git push origin <branch_name>
 git checkout feature01
 
 9. To delete a branch use:
-git push origin --delete feature_01
+a) git push origin --delete name_of_the_branch
+
+This will remove remote branch only. To remove branch locally:
+git branch -d name_of_the_branch (this will delete merged branches only)
+git branch -D name_of_the_branch (this will delete unmerged branches only)
+
+To find out if branch is merged/unmerged:
+git branch —merged
+git branch —no-merged
+
+OR:
+b)
+git branch -d name_of_the_branch (this will delete merged branches only)
+git branch -D name_of_the_branch (this will delete unmerged branches only)
+
+After this to remove this branch from remote repository run:
+git push origin : name_of_the_branch
+
 
 10. To commit a change straigh to the local repository, without exlpicitly adding it to the index (it will avoid the process of staging a file):
 git commit -a -m “Message”
@@ -94,7 +111,15 @@ git fetch origin
 git reset --hard origin/master
 
 22. To retrieve up-to-date data from the remote repo and merge it with the local work directory: 
+
 git pull
+
 Note, it doesn’t require before running this command to check in changes made to the local copy.
+
+23. git branch
+Lists all branches for the current repo. The branch with the * near it is the current branch.
+
+
+
 
 
