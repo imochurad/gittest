@@ -93,9 +93,4 @@ git diff <source_branch> <target_branch>
 git fetch origin
 git reset --hard origin/master
 
-Branch feature_a
-
-
-Branch master
-
 
