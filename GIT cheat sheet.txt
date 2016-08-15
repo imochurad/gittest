@@ -122,7 +122,7 @@ git fetch origin
 git reset --hard origin/master
 
 22. To retrieve up-to-date data from the remote repo and merge it with the local work directory: 
-aaa + aaa
+
 git pull
 
 Note, it doesn’t require before running this command to check in changes made to the local copy.
@@ -130,7 +130,24 @@ Note, it doesn’t require before running this command to check in changes made 
 23. git branch
 Lists all branches for the current repo. The branch with the * near it is the current branch.
 
-bbb
+24. Rebasing
+
+With the rebase command, you can take all the changes that were committed on one branch and replay them on another one. 
+
+Let’s say master branch was cloned to create a feature_x branch.
+During feature work there were changes introduced to the feature_x branch.
+There were also commits made to the master branch.
+Now feature_x branch is behind and ahead master branch at the same time.
+
+Rebasing will replay commits made to the master branch since the point in time when cloning was done and apply on top changes that were made to the feature_x branch.
+
+git checkout feature_x
+git rebase master
+
+Never rebase anything you’ve pushed somewhere. Use merge instead.
+  
+
+
 
 
 
