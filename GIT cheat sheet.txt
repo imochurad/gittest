@@ -122,7 +122,7 @@ git fetch origin
 git reset --hard origin/master
 
 22. To retrieve up-to-date data from the remote repo and merge it with the local work directory: 
-
+aaa
 git pull
 
 Note, it doesn’t require before running this command to check in changes made to the local copy.
