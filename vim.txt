@@ -1,0 +1,19 @@
+vim
+:q! -- exit without saving
+
+0 -- beginning of the line
+$ -- end og the line
+G -- last line
+gg -- first line
+A -- end of the file + insert (append) mode
+w -- beginning of the next word
+b -- beginning of the previuos word
+V -- select text with arrows
+D -- delete selection
+y -- copy selection
+P -- paste buffer
+dG -- delete everuthing starting from the cursor down till the end of the file
+dgg -- delete everything starting from the cursor up to the beginning of the file
+
+:set number -- show line numbers
+:syntax on -- syntax higlighting

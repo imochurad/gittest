@@ -1,0 +1,14 @@
+BASH
+
+Constants:
+declare -r NUM1=5
+
+Output text on many lines(concatenate):
+cat<< END
+line1
+line2
+...
+linex
+END
+
+END here denotes the end of the string sequence, where to stop concatenating

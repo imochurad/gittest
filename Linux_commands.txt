@@ -1,0 +1,12 @@
+Linux commands
+
+1. Change permissions:
+chmod 755 file_name -- change file into executable (7 - owner of the file will be able to 
+read, write and execute it, 5 - the group will be able to read and execute, 
+5 - everyone else will be able to read and execute)
+6 - permission to read and write
+4 - read only
+3 - write and execute
+2 - write only
+1 - execute only
+0 - do nothing
