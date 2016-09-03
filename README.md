@@ -1,2 +1,1 @@
-# gittest master
-This is me trying to deepen GIT knowledge.
+Cheat sheets, best practices etc
